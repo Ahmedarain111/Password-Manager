@@ -4,6 +4,6 @@ from flask_login import LoginManager, login_user, logout_user, login_required, c
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/login', methods=['GET', 'POST'])
 def main():
-    return
+    return render_template('login.html')
