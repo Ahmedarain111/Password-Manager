@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PassVault</title>
+    {% if tab_name %}
+        <title>{{ tab_name }}</title>
+    {% else %}
+        <title>PassVault</title>
+    {% endif %}
 </head>
 <body>
     
